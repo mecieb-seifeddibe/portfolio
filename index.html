@@ -1,92 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saif | Web Developer</title>
+  <title>Seifeddine Mecieb | Front-end Web Developer</title>
+  
+  <!-- Modern Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-  <nav class="navbar">
-    <h2 class="logo">Saif</h2>
+  <!-- Decorative background elements -->
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+  <div class="bg-shape shape-3"></div>
 
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Seifeddine<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn btn-primary btn-sm">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
   </nav>
 
-  <header class="hero">
-    <h1>Seifeddine Mecieb</h1>
-    <p>Front-end web Developer</p>
+  <header class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="greeting">Hi there, I'm</span>
+        <h1>Seifeddine<br><span class="highlight">Mecieb</span></h1>
+        <p class="subtitle">Front-end Web Developer crafting beautiful and responsive digital experiences.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+         <!-- Dynamic Code Snippet Visual -->
+         <div class="glass-card decorative-card">
+            <div class="code-snippet">
+              <span class="code-keyword">const</span> <span class="code-var">developer</span> = {<br>
+              &nbsp;&nbsp;<span class="code-prop">name</span>: <span class="code-string">'Seifeddine'</span>,<br>
+              &nbsp;&nbsp;<span class="code-prop">skills</span>: [<span class="code-string">'HTML'</span>, <span class="code-string">'CSS'</span>, <span class="code-string">'JS'</span>],<br>
+              &nbsp;&nbsp;<span class="code-prop">passion</span>: <span class="code-string">'Web UI/UX'</span><br>
+              };
+            </div>
+         </div>
+      </div>
+    </div>
   </header>
 
   <main>
-
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>
-        I am a web developer passionate about building clean and user-friendly websites.
-      </p>
-    </section>
-
-    <section id="skills" class="skills">
-      <h2>Skills</h2>
-
-      <div class="skills-container">
-
-        <div class="skills-card">HTML</div>
-        <div class="skills-card">CSS</div>
-        <div class="skills-card">JavaScript</div>
-        <div class="skills-card">Git</div>
-
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header">
+          <h2><span class="counter">01.</span> About Me</h2>
+          <div class="line"></div>
+        </div>
+        <div class="about-content">
+          <p class="lead">
+            I am a passionate web developer focused on building clean, user-friendly, and performant websites.
+          </p>
+          <p>
+            With a strong foundation in front-end technologies, I enjoy transforming complex problems into elegant, intuitive interface designs. I am constantly learning new tools and frameworks to deliver the best possible web experiences.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-
-      <div class="projects-container">
-
-        <div class="project-card">
-          <img src="C:\Users\SM-ProTech\OneDrive\Bureau\portfolio\1000098813.jpg" alt="project">
-          <h3>Task Management App</h3>
-          <p>A simple app to manage workers and tasks.</p>
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header">
+          <h2><span class="counter">02.</span> My Skills</h2>
+          <div class="line"></div>
         </div>
+        <p class="section-description">Technologies and tools I work with to bring ideas to life.</p>
 
-        <div class="project-card">
-          <img src="C:\Users\SM-ProTech\OneDrive\Bureau\portfolio\projet2.png" alt="project">
-          <h3>Inventory Management System</h3>
-          <p>Application to manage agricultural stock and consumption.</p>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fa-brands fa-html5 skill-icon" style="color: #e34f26;"></i>
+            <h3>HTML5</h3>
+            <p>Semantic Structure</p>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-css3-alt skill-icon" style="color: #1572b6;"></i>
+            <h3>CSS3 & SCSS</h3>
+            <p>Modern Styling</p>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-square-js skill-icon" style="color: #f7df1e;"></i>
+            <h3>JavaScript</h3>
+            <p>Interactive Logic</p>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-git-alt skill-icon" style="color: #f05032;"></i>
+            <h3>Git & GitHub</h3>
+            <p>Version Control</p>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-mobile-screen skill-icon" style="color: #00adb5;"></i>
+            <h3>Responsive UI</h3>
+            <p>Mobile-First Layouts</p>
+          </div>
         </div>
-
       </div>
-
     </section>
 
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header">
+          <h2><span class="counter">03.</span> Featured Projects</h2>
+          <div class="line"></div>
+        </div>
 
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
+        <div class="projects-grid">
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/gaming-site.png" alt="Gaming Site Project" onerror="this.src='https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop'">
+              <div class="project-overlay">
+                <a href="https://mecieb-seifeddibe.github.io/Gaming-site/" target="_blank" class="view-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Web Application</span>
+              <h3>Gaming Site</h3>
+              <p>An interactive gaming platform interface with modern aesthetics and smooth transitions.</p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
 
-      <p>Email: <a href="mailto:saifkataloni110@gmail.com">saifkataloni110@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/mecieb-seifeddibe">GitHub Profile</a></p>
-      <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/youtube.png" alt="YouTube Clone HTML/CSS" onerror="this.src='https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=600&auto=format&fit=crop'">
+              <div class="project-overlay">
+                <a href="https://mecieb-seifeddibe.github.io/youtube-/" target="_blank" class="view-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">UI Clone</span>
+              <h3>YouTube Interface HTML</h3>
+              <p>A responsive clone of the YouTube homepage focusing on grid layout and flexbox alignment.</p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span>
+              </div>
+            </div>
+          </div>
 
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/1000098813.jpg" alt="Task Management App" onerror="this.src='https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=600&auto=format&fit=crop'">
+              <div class="project-overlay">
+                <a href="#" class="view-btn"><i class="fa-solid fa-code"></i> Source Code</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Productivity</span>
+              <h3>Task Management App</h3>
+              <p>A sleek, intuitive application to manage daily tasks, workflows, and team productivity.</p>
+              <div class="project-tech">
+                <span>JavaScript</span><span>DOM</span>
+              </div>
+            </div>
+          </div>
 
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/projet2.png" alt="Inventory System" onerror="this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=600&auto=format&fit=crop'">
+              <div class="project-overlay">
+                <a href="#" class="view-btn"><i class="fa-solid fa-code"></i> Source Code</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Enterprise App</span>
+              <h3>Inventory System</h3>
+              <p>A comprehensive application designed to manage agricultural stock tracking and consumption analytics.</p>
+              <div class="project-tech">
+                <span>HTML</span><span>JS</span><span>Data</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="contact-card glass-card">
+          <div class="contact-header">
+            <h2><span class="counter">04.</span> Get In Touch</h2>
+            <p>I'm currently looking for new opportunities. Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!</p>
+          </div>
+          
+          <div class="contact-links">
+            <a href="mailto:saifkataloni110@gmail.com" class="contact-item">
+              <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-details">
+                <span class="label">Email Me</span>
+                <span class="value">saifkataloni110@gmail.com</span>
+              </div>
+            </a>
+            
+            <a href="https://github.com/mecieb-seifeddibe" target="_blank" class="contact-item">
+              <div class="icon-box"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-details">
+                <span class="label">GitHub</span>
+                <span class="value">mecieb-seifeddibe</span>
+              </div>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/mecieb-seifeddine-04195b370/" target="_blank" class="contact-item">
+              <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-details">
+                <span class="label">LinkedIn</span>
+                <span class="value">Let's Connect</span>
+              </div>
+            </a>
+          </div>
+          
+          <div class="contact-action">
+             <a href="mailto:saifkataloni110@gmail.com" class="btn btn-primary btn-lg">Say Hello</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2026 Saif. All rights reserved.</p>
+    <div class="container footer-container">
+      <div class="footer-logo">Saif<span>.</span></div>
+      <div class="footer-socials">
+        <a href="https://github.com/mecieb-seifeddibe" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mecieb-seifeddine-04195b370/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:saifkataloni110@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="copyright">Designed & Built by Seifeddine Mecieb &copy; 2026</p>
+    </div>
   </footer>
 
-</body>
+  <script>
+    // Simple script for sticky navbar and smooth scrolling
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
 
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.section-header, .about-content, .skill-card, .project-card, .contact-card').forEach(el => {
+      el.classList.add('fade-up');
+      observer.observe(el);
+    });
+  </script>
+</body>
 </html>
